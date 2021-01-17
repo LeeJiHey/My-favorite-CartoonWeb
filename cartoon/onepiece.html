@@ -6,23 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My favorite Cartoon Web</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="color.js"></script>
 </head>
 
 <body>
 
 
     <h1><a href="index.html">CARTOON</a></h1>
+    
+    
 
     <div id="grid">
         <div>
+            <div class="night_day">
+                <br>
+                <!--
+                <input type="button" value="night" onclick="
+                    document.querySelector('body').style.backgroundColor = 'black';
+                    document.querySelector('body').style.color = 'white';
+                ">
+            
+                <input type="button" value="day" onclick="
+                    document.querySelector('body').style.backgroundColor = 'white';
+                    document.querySelector('body').style.color = 'black';
+                ">
+                -->
+                
+
+                <input type="button" value="night" onclick="
+                    nightDayHandler(this);
+                ">
+            </div>
             <ol>
                 <li><a href="onepiece.html">원피스</a></li>
                 <li><a href="naruto.html">나루토</a></li>
                 <li><a href="bleach.html">블리치</a></li>
             </ol>
         </div>
-
-        <div id="content">
+        <div id="detail">
             <!--<img src="onepiece.png" width="500px">-->
             <h2>원피스</h2>
             <iframe width="740" height="416" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=011FD570B376B4EEBE831AEC7FC67DCED3E8&outKey=V123030ab53ab2f6658a83e911276087d41612e17c39bca0604833e911276087d4161" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>

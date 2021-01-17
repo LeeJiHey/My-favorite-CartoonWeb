@@ -17,7 +17,7 @@ h2 {
 }
 a {
     text-decoration: none;
-    color: black;
+    color : blue;
 }
 #grid ol {
     font-size: 25px;
@@ -29,12 +29,15 @@ a {
     grid-template-columns: 200px 1fr;
     
 }
-#grid #content {
+#grid #detail {
     border-left: 1px solid gray;
     padding: 20px;
 }
-.content_home{
+.detail_home{
     font-size: 25px;
+}
+.night_day {
+    text-align: center;
 }
 /*scree width < 990px*/
 @media(max-width: 990px){
@@ -43,5 +46,9 @@ a {
     }
     h1 {
         border-bottom: none;
+    }
+    .night_day {
+        text-align: left;
+        padding-left: 50px;
     }
 }
