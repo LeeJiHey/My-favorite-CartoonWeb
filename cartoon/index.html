@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My favorite Cartoon Web</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="color.js"></script>
 </head>
 
 <body>
@@ -14,6 +16,12 @@
 
     <div id="grid">
         <div>
+            <div class="night_day">
+                <br>
+                <input type="button" value="night" onclick="
+                    nightDayHandler(this);
+                ">
+            </div>
             <ol>
                 <li><a href="onepiece.html">원피스</a></li>
                 <li><a href="naruto.html">나루토</a></li>
@@ -21,7 +29,7 @@
             </ol>
         </div>
 
-        <div id="content" class="content_home">
+        <div id="detail" class="detail_home">
             <p>Welcome to My favorite cartoon web!</p>
             <p>My favorite cartoons are Onepiece, Naruto, and Bleach.</p>
             <br>

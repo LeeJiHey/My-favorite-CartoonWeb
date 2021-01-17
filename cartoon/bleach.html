@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My favorite Cartoon Web</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="color.js"></script>
 </head>
 
 <body>
@@ -15,6 +17,12 @@
 
     <div id="grid">
         <div>
+            <div class="night_day">
+                <br>
+                <input type="button" value="night" onclick="
+                    nightDayHandler(this);
+                ">
+            </div>
             <ol>
                 <li><a href="onepiece.html">원피스</a></li>
                 <li><a href="naruto.html">나루토</a></li>
@@ -22,7 +30,7 @@
             </ol>
         </div>
 
-        <div id="content">
+        <div id="detail">
             <!--<img src="bleach.png" width="500px">-->
             <h2>블리치</h2>
             <iframe width="740" height="416" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=AA61976AD61E732EBA02B21FA7062EFA1C02&outKey=V12789c26a081063190baf85f5da17737313686cebcdcdd719f53f85f5da177373136" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>
